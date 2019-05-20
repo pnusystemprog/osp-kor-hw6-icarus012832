@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "phone.h"
-
 void registerPhoneData();
 void printAll();
 void searchByName();
@@ -26,6 +25,7 @@ int main()
             case 3: searchByName(); break;
             case 4: deleteByName(); break;
 		}
+	count_service++;
 	} while (service != 5);	// if Exit is not entered, the loop continues
 	return 0;
 }
@@ -34,34 +34,18 @@ int main()
 ** Your code..
 ** This function should be implemented in register.c
 *************************/
-void registerPhoneData()
-{
-    printf("Registration\n");
-}
 
 /*****************
 ** Your code..
 ** This function should be implemented in search.c
 *************************/
-void printAll()
-{
-    printf("Print all contants in the PhoneBook\n");
-}
 
 /*****************
 ** Your code..
 ** This function should be implemented in search.c
 *************************/
-void searchByName()
-{
-    printf("Search by Name\n");
-}
 
 /*****************
 ** Your code..
 ** This function should be implemented in delete.c
 *************************/
-void deleteByName()
-{
-    printf("Deletion is done\n");
-}
